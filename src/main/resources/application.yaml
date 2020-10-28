@@ -31,6 +31,7 @@ spring:
 hapi:
   fhir:
     defer_indexing_for_codesystems_of_size: 101
+    empi_enabled: true
 #    implementationguides:
 #      -
 #        url: https://build.fhir.org/ig/hl7dk/dk-medcom/branches/corrections/package.tgz
@@ -105,9 +106,9 @@ hapi:
 #    binary_storage_enabled: true
 #    bulk_export_enabled: true
 #    partitioning_multitenancy_enabled:
-#    subscription:
-#      resthook_enabled: false
-#      websocket_enabled: false
+    subscription:
+      resthook_enabled: true
+      websocket_enabled: true
 #      email:
 #        from: some@test.com
 #        host: google.com
